@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" media="all" href="../css/style.css">
+            <script src="https://kit.fontawesome.com/7b9f7b3dcc.js" crossorigin="anonymous"></script>
+            <title>Billeterie</title>
+            <link rel="icon" type="image/x-icon" href="../IMAGE/logoFcMaritime.PNG.png">
+        </head>
+        <body>
+        <header>
+            <!-- Logo et Nom du Club à gauche -->
+            <a href="billeterie.html" class="logo-group">
+                <img src="../IMAGE/logoFcMaritime.PNG.png" alt="logoFcMariners" class="nav-logo">
+
+            </a>
+
+            <!-- Bouton de navigation -->
+            <nav class="nav-horizontal">
+                <a href="accueil.html" class="nav-item"><i class="fas fa-anchor"></i> ACCUEIL</a>
+                <a href="equipe.html" class="nav-item"><i class="fas fa-users"></i> ÉQUIPE</a>
+                <a href="#" class="nav-item"><i class="fas fa-shopping-bag"></i> BOUTIQUE</a>
+                <a href="billeterie.html" class="nav-item"><i class="fa-solid fa-money-bill"></i>BILLETERIE</a>
+                <a href="contact.html" class="nav-item"><i class="fa-solid fa-address-book"></i>CONTACT</a>
+            </nav>
+        </header>
+        <section>
+            <article>
+                <form method="post" action="receptionFormulaire.html" enctype="multipart/form-data">
+
+                    <fieldset>
+                        <!--Titre-->
+                        <legend><i><b><u><h2>Inscription:</h2></u></b></i></legend>
+                        <p>
+
+                            <h3>Match:</h3>
+                        <p>
+                            <!--Selection du match-->
+                            <label for="match">Match:</label>
+                            <select id="match" name="choixMatch" required>
+                                <option value="usMarais" selected="selected">04/04/26 US Marais(A) </option>
+                                <option value="asValMontagne">11/04/2026 AS Val-Montagne(A) </option>
+                                <option value="RacingClubBaie">19/04/26 RC La Baie (E)</option>
+                                <option value="fcCitadelle">25/04/26 FC Citadelle (A)</option>
+                                <option value="olympiqueForestier">02/05/26 Olympique Forestier (E)</option>
+                            </select>
+                        </p>
+                            <!-- Info du demandeur-->
+                            <h3>Info du demandeur:</h3>
+                        <p>
+                            <!--Nom -->
+                            <label for="nom">Nom:</label>
+                            <input type="text" id="nom" name="nom"  placeholder="Thorne" required>
+                        </p>
+                        <p>
+                            <!--Prénom -->
+                            <label for="titre">Prénom:</label>
+                            <input type="text" name="titre" id="titre" placeholder="Marcus" required>
+                        </p>
+                        <p>
+                        <!-- E-mail-->
+                            <label for="email">Adresse E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                        Envoi des billets
+                        </p>
+                        <p>
+                            <!--Numéro de téléphone-->
+                            <label for="telephone">Numéro de téléphone :</label>
+                            <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" placeholder="0123" required>
+                        </p>
+                            <!--Carte d'identité-->
+                        <p>
+                            <label for="carteIdentite">Déposez votre fichier:</label><br>
+                            <input type="file" name="carteIdentite" id="carteIdentite" required><br>
+                        </p>
+                            <!-- Sélection des places-->
+                            <h3>Sélection des places</h3>
+                        <p>
+                            <!--choix de la tribune-->
+                            <label for="choixTribune">Choix de la tribune:</label>
+                            <select name="choixTribune" id="choixTribune" required>
+                                <option value="honneur" selected="selected">Tribune d'honneur (50€)</option>
+                                <option value="laterale">Tribune latéral (30€)</option>
+                                <option value="virage">Tribune du virage(15€)</option>
+                            </select>
+                        </p>
+                        <p>
+                        <!--Nombre de place-->
+                        <label for="nombrePlace">Nombre de place:</label>
+                        <select name="nombrePlace" id="nombrePlace" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select> Maximum 5 places
+                        </p>
+                        <!--Réduction-->
+                        <p> Réduction:
+                            <input type="radio" name="tarifReduit" id="-12ans" value="-12ans">
+                            <label for="-12ans">- 12 ans</label>
+
+                            <input type="radio" name="tarifReduit" id="etudiant" value="etudiant">
+                            <label for="etudiant">Etudiant</label>
+
+                            <input type="radio" name="tarifReduit" id="aucuneReduction" value="aucuneReduction">
+                            <label for="aucuneReduction">Aucune réduction</label>
+                        </p>
+
+                        <!--Méthode de paiement-->
+                        <h3>Paiement:</h3>
+                        <p>
+                            <label for="choixTribune">Méthode:</label>
+                            <select name="methodePaiement" id="methodePaiement" required>
+                                <option value="honneur" selected="selected">Carte Bancaire (frais selon la banque)</option>
+                                <option value="laterale">Paypal (aucun frais)</option>
+                            </select>
+                        </p>
+                        <!--Conditions-->
+                        <h3>Conditions de vente:</h3>
+                        <p>
+                        <form action="/traitement-donnees" method="post">
+                            <!-- Case à cocher obligatoire -->
+                            <input type="checkbox" id="billetsNominatif" name="conditions" required>
+                            <label for="billetsNominatif">Je confirme que les billets sont nominatif et non revendable.</label>
+                        </p>
+                        <p>
+                    </form>
+                        </p>
+                        <!--Enregistrer-->
+                        <h3>Parez à l'abordage?</h3>
+                        <label for="enregistrer"></label>
+                        <input type="submit" value="enregistrer" id="enregistrer" required>
+
+                    </fieldset>
+                </form>
+
+            </article>
+        </section>
+        <footer>
+            <!--Copyright-->
+            <h3>Copyright:<i class="fa-solid fa-ship"></i> Laroche Anthony<i class="fa-solid fa-ship"></i></h3>
+            <nav class="nav-horizontal">
+                <a href="billeterie.html" class="nav-item"><i class="fas fa-anchor"></i> HAUT DE PAGE</a>
+                <a href="https://fr-fr.facebook.com/" target="_blank" class="nav-item"><i class="fa-brands fa-facebook"></i> FACEBOOK</a>
+                <a href="https://www.instagram.com/?hl=fr" target="_blank" class="nav-item"><i class="fa-brands fa-square-instagram"></i> INSTAGRAM</a>
+                <a href="https://x.com/?lang=fr" target="_blank" class="nav-item"><i class="fa-brands fa-twitter"></i> TWITTER</a>
+                <a href="contact.html" class="nav-item"><i class="fa-solid fa-address-book"></i>CONTACT</a>
+            </nav>
+        </footer>
+
+        </body>
+
+    </html>

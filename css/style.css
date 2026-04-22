@@ -1,0 +1,77 @@
+body {
+    background-color: #FDFBD4;
+}
+
+h1, h2, h3 {
+    color: #800020;
+    text-align: center;
+}
+.nav-logo {
+    height:150px; /* Ajustez la taille selon votre image */
+    width: auto;  /* Ajustez la largeur */
+    transition: transform 0.3s ease; /* Durée de la transition */
+}
+
+.nav-logo:hover {
+    transform: rotate(-10deg) scale(1.1); /* Petit effet dynamique au survol */
+}
+.nav-horizontal {
+    display: flex;          /* Active le mode flexible */
+    flex-direction: row;    /* Aligne les éléments horizontalement */
+    justify-content: center; /* CENTRE les boutons horizontalement */
+    align-items: center;    /* Aligne les boutons verticalement au centre */
+    gap: 15px;              /* Espacement de 15px entre chaque bouton */
+    flex-wrap: wrap;        /* Passage à la ligne automatique si besoin */
+    width: 100%;            /* Prend toute la largeur pour pouvoir centrer */
+    margin: 20px 0;
+    color: #800;
+}
+.nav-horizontal :hover {
+    transform: rotate(10deg) scale(1.1); /* Petit effet dynamique au survol */
+    transition: transform 0.7s ease; /* Durée de la transition */
+    color: #800020;
+
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #70b8e2; /* Fond bordeaux très subtil */
+    border: 7px solid #800020;
+    border-radius: 15px;
+}
+
+.contact-form {
+    display: flex;                      /* Active le mode flexible */
+    flex-direction: column;             /* Aligne les éléments verticalement */
+    gap: 20px;
+}
+
+a {
+    color: #70b8e2;
+}
+
+caption, table, td, th {
+    border: 1px solid black;  /*bordure dans le tableau
+}
+
+table {
+    border-collapse: separate; /* Obligatoire pour border-spacing */
+    border-spacing: 10px 15px; /* 10px horizontal, 15px vertical */
+}
+
+
+form {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments les uns sous les autres */
+    align-items: center;    /* Centre horizontalement */
+    gap: 10px;             /* Optionnel : espace entre les éléments */
+}
+
+.laCompoEtImage {
+
+        display: flex;
+        align-items: center; /* Aligne verticalement au centre */
+        gap: 20px; /* Espace entre l'image et le paragraphe */
+    }

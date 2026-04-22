@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" media="all" href="../css/style.css">
+            <script src="https://kit.fontawesome.com/7b9f7b3dcc.js" crossorigin="anonymous"></script>
+            <title>Contact</title>
+            <link rel="icon" type="image/x-icon" href="../IMAGE/logoFcMaritime.PNG.png">
+        </head>
+        <body>
+        <header>
+            <!-- Logo et Nom du Club à gauche -->
+            <a href="billeterie.html" class="logo-group">
+                <img src="../IMAGE/logoFcMaritime.PNG.png" alt="logoFcMariners" class="nav-logo">
+
+            </a>
+
+            <!-- Bouton de navigation -->
+            <nav class="nav-horizontal">
+                <a href="accueil.html" class="nav-item"><i class="fas fa-anchor"></i> ACCUEIL</a>
+                <a href="equipe.html" class="nav-item"><i class="fas fa-users"></i> ÉQUIPE</a>
+                <a href="#" class="nav-item"><i class="fas fa-shopping-bag"></i> BOUTIQUE</a>
+                <a href="billeterie.html" class="nav-item"><i class="fa-solid fa-money-bill"></i>BILLETERIE</a>
+                <a href="contact.html" class="nav-item"><i class="fa-solid fa-address-book"></i>CONTACT</a>
+            </nav>
+        </header>
+
+            <article>
+                <form method="post" action="receptionFormulaire.html" enctype="multipart/form-data">
+                    <h2>Embarquez avec nous !</h2>
+                    <fieldset>
+                        <section class="contact-section">
+                            <h2>Contacter le Club</h2>
+                            <p>Une question sur la billetterie ou l'école de foot ? Écrivez-nous !</p>
+
+                            <form class="contact-form">
+                                <div class="form-group">
+                                    <label for="name">Nom complet</label>
+                                    <input type="text" id="name" name="name" placeholder="Ex: Jean Marin" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Adresse E-mail</label>
+                                    <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject">Sujet</label>
+                                    <select id="subject" name="subject">
+                                        <option value="billetterie">Billetterie / Matchs</option>
+                                        <option value="boutique">Boutique Officielle</option>
+                                        <option value="recrutement">Recrutement / Détections</option>
+                                        <option value="autre">Autre demande</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <p><label for="message">on vous écoutes moussaillons:</label></p>
+                                    <textarea id="message" name="message" rows="10" cols="55" placeholder="Dites-nous tout..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="button-cta">Envoyer l'équipage</button>
+                            </form>
+                        </section>
+                    </fieldset>
+                </form>
+
+            </article>
+
+        </body>
+        <footer>
+            <!--Copyright-->
+            <h3>Copyright:<i class="fa-solid fa-ship"></i> Laroche Anthony<i class="fa-solid fa-ship"></i></h3>
+            <nav class="nav-horizontal">
+                <a href="contact.html" class="nav-item"><i class="fas fa-anchor"></i> HAUT DE PAGE</a>
+                <a href="https://fr-fr.facebook.com/" target="_blank" class="nav-item"><i class="fa-brands fa-facebook"></i> FACEBOOK</a>
+                <a href="https://www.instagram.com/?hl=fr" target="_blank" class="nav-item"><i class="fa-brands fa-square-instagram"></i> INSTAGRAM</a>
+                <a href="https://x.com/?lang=fr" target="_blank" class="nav-item"><i class="fa-brands fa-twitter"></i> TWITTER</a>
+
+            </nav>
+        </footer>
+    </html>
